@@ -1,0 +1,15 @@
+*{
+    padding:0;
+    margin:0;
+}
+a{
+   text-decoration:none; 
+}
+li{
+    list-style:none;
+}
+@mixin allStyle($width,$height,$background){
+    width:$width;
+    height:$height;
+    background:$background;
+}
