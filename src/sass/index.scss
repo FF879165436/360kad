@@ -27,12 +27,20 @@ header{
        line-height:30px;
        cursor:pointer;
     }
+    #login:hover{
+        text-decoration:underline;
+        color:red;
+    }
     #register{
        font-size:11px;
        color:#1674ee; 
        line-height:30px;
        cursor:pointer;
        margin-left:10px;
+    }
+    #register:hover{
+        text-decoration:underline;
+        color:red;
     }
 }
 #headerRight{
@@ -80,14 +88,19 @@ header{
         }
         #first:hover {
             background:#fff;
-            
         }
         #first:hover span{
             background:url(../../dist/img/ico_t2.min.png) no-repeat -3px -137px;
         }
         #first:hover #first-F{
-            display:block;
-                     
+            display:block;        
+        }
+        #first:hover a{
+            color:red;
+            text-decoration:underline;
+        }
+        #first:hover #first-F a{
+            text-decoration:none;
         }
         #first1{
             width:75px;
@@ -129,6 +142,13 @@ header{
         #first1:hover #first1-F{
                 display:block;
         }
+        #first1:hover a{
+            color:red;
+            text-decoration:underline;
+        }
+        #first1:hover #first1-F a{
+            text-decoration:none;
+        }
         #second{
             width:92px;
             a{
@@ -137,6 +157,10 @@ header{
             }
             font-weight:700;
             background:url(../../dist/img/ico_t2.min.png) no-repeat 4px -5px;
+        }
+        #second:hover a{
+            color:red;
+            text-decoration:underline;
         }
         #three{
             width:107px;
@@ -186,6 +210,9 @@ header{
         #four:hover #four-F{
                 display:block;
         }
+        #four:hover a{
+            color:red;
+        }
         #five{
             width:63px;
             position:relative;
@@ -207,9 +234,11 @@ header{
         }
         #five:hover span{
             background:url(../../dist/img/ico_t2.min.png) no-repeat -3px -137px;
-        }    }
+        }   
+        }
     }
 }
+//标志图和搜索框
 #logoAndSeek{
     @include allStyle(1200px,112px,#ffffff);
     margin:0 auto;
@@ -283,5 +312,426 @@ header{
                 color:#969696;
             }
         }
+        a:hover{
+            text-decoration:underline;
+        }
     } 
+}
+//主导航
+#nav{
+    @include allStyle(1200px,38px,#fff);
+    margin:auto;
+    position:relative;
+    h2{
+        float:left;
+        @include allStyle(180px,38px,#0066d4);
+        font-size:19px;
+        img{
+           margin-left:21px;
+        }
+        #navFirst{
+            line-height:38px;
+            color:#ffe7ff;      
+        }
+        #navFirst:hover{
+            text-decoration:underline;
+        }
+    }
+    #allA{
+        float:left;
+        height:38px;
+        width:950px;
+        ul{
+            height:38px;
+            width:950px;
+            li{
+                height:38px;
+                float:left;
+                margin-left:20px;
+                margin-right:20px;
+                a{
+                    position:relative;
+                    display:block;
+                    line-height:38px;
+                    font-size:16px;
+                    color:#000329;
+                } 
+                a:hover {
+                    color:#0063cd;
+                }
+                #navM{
+                    margin-left:0;
+                    margin-right:0;
+                    padding:0 20px;
+                }
+                #navM:hover {
+                    background:#fff;
+                }    
+                .nav2{
+                    z-index:1000;
+                    display:none;
+                    position:absolute;
+                    height:107px;
+                    width:224px;
+                    background:#fff;
+                    font-size:10px;
+                    li{
+                        width:70px;
+                        height:24px;
+                        line-height:24px;
+                        a{
+                            height:24px;
+                            display:inline-block;
+                            color:#666;
+                            font-size:12px;                     
+                        }
+                    }
+                    li:hover a{
+                        color:red;
+                        text-decoration:underline;
+                    }
+                }
+              #navM1{
+                    padding:0 20px;
+                } 
+                #navM1:hover{
+                    background:#fff;
+                }
+            }
+            #allA1{
+                position:relative;
+                margin-left:0;
+                margin-right:0;
+                span{
+                    position:absolute;
+                    height:4px;
+                    width:7px;
+                    background:url(../../dist/img/ico_t2.min.png) no-repeat -3px -124px;
+                    left:88px;
+                    top:17px;
+                }
+            }
+            #allA1:hover .nav2{
+                display: block;
+            }
+            #allA2{
+                 z-index:1000;
+                position:relative;
+                margin-left:0;
+                margin-right:0;
+                span{
+                    position:absolute;
+                    height:4px;
+                    width:7px;
+                    background:url(../../dist/img/ico_t2.min.png) no-repeat -3px -124px;
+                    left:105px;
+                    top:17px;           
+                }
+                #allPic{
+                   
+                    display:none;
+                    @include allStyle(120px,356px,#fff);
+                    img{ 
+                        
+                        margin-left:8px;
+                        margin-top:19px;
+                    }
+                    .firstP{
+                       
+                        font-size:16px;
+                        text-align:center;
+                        color:#141414;
+                        font-weight:bold;
+                    }
+                    .secondP{
+                        font-size:16px;
+                        text-align:center;
+                        color:red;
+                        line-height:30px;
+                    }
+                }
+            }
+            #allA2:hover #allPic{
+                display:block;
+            }
+        }
+    }  
+}
+.line{
+    @include allStyle(100%,2px,blue);
+}
+//蓝色导航和banner
+.mainBox{
+    background:rgb(142,60,36);
+}
+#mainbox{
+    width:1200px;
+    height:400px;
+    background:pink;
+    margin:0 auto;
+    //蓝色部分
+    #sidebar{
+        //display:none;
+        float:left;
+        @include allStyle(180px,400px,#036ddd); 
+        #siderbarA{
+            height:400px;
+            width:180px;
+            li{
+                line-height:40px;
+                height:40px;
+                width:180px;
+                div{
+                    padding-left:5px;
+                    height:40px;
+                    width:147px;    
+                    margin:0 auto;
+                    border-bottom:1px dashed #0c5fb8;
+                    a{
+                        font-size:13px;
+                        color:#b9e2f4;
+                    }
+                    #firstA{
+                        color:#fcfdf5;
+                    }
+                }
+            }
+            li:hover{
+                background:#fff;
+            }
+            li:hover #firstA{
+                color:#036dde;
+            }
+            li:hover a{
+                color:#3195ff;
+            }
+        }
+    }
+    //banner图
+    #banner{
+        position:relative;
+        width:810px;
+        height:400px;
+        float:left;
+        ul{
+            position:relative;
+            height:400px;
+            background:blue;
+            li{
+                position:absolute;
+                height:400px;
+                img{
+                    width:100%;
+                    display:block; 
+                }
+            }
+        }
+        #smallR{
+            bottom:10px;
+            position:absolute;
+            line-height:20px;
+            height:20px;
+            text-align:center;
+            width:810px;
+            div{
+                @include allStyle(12px,12px,#000);
+                opacity:0.5;
+                display:inline-block;
+                border-radius:10px;
+                margin-left:10px;
+                cursor:pointer;
+            }
+        }
+    }
+    //banner右部分
+    #bannerR{
+       //display:none;
+        float:right;
+        @include allStyle(210px,400px,#fff); 
+        #rightT{
+            height:157px;
+            width:210px;
+            overflow:hidden;
+            li{
+                float:left;
+                margin-left:18px; 
+                margin-top:8px;
+                p{
+                    font-size:11px;
+                    color:#080000;
+                }
+            }
+        }
+        #rightC{
+            //position:relative;
+            line-height:39px;
+            height:39px;
+            width:210px;
+            //background:deepskyblue;
+            border-top:1px solid #f1f1f1;
+            border-bottom:1px solid #f1f1f1;
+            p{
+                font-size:12px;
+                color:#0f1900;
+            }
+            .zixunY{
+                padding-left:15px;
+                float:left;
+            }
+            .phonePic{
+                float:left;
+                background:url(../../dist/img/phonI.min.png) no-repeat 0 13px;  
+                display:block;
+                text-indent:17px;
+                margin-left:10px;
+            }
+        }
+        #rightC1{
+            height:36px;
+            width:195px;
+            font-size:12px;
+            line-height:36px;
+            padding-left:15px;
+            #jianG{
+                color:#000802;
+            }
+            #jianG:hover{
+                text-decoration:underline;
+            }
+        }
+        #jianK{
+            height:166px;
+            width:210px;
+        }
+    }
+}
+.seckill{
+    @include allStyle(1200px,299px,red);
+    margin:0 auto;
+    margin-top:20px;
+    .chaoZ{
+        line-height:36px;
+        height:36px;
+        width:1200px;
+        background:lightblue;
+        h3{
+            float:left;
+            width:107px;
+            font-size:23px;
+            color:#213035;
+        }
+        .clockicon{
+            font-size:12px;
+            position:relative;
+            float:left;
+            height:36px;
+            width:168px;
+            background:dodgerblue;
+            .icon{
+                position:absolute;
+                top:11px;
+                height:17px;
+                width:17px;
+                background:url(../../dist/img/clockicon.min.png) no-repeat 0 0;
+            }
+            span{
+                font-size:15px;
+                color:#ff030b;
+            }
+        }
+        .icon2{
+            margin-top:13px;
+            float:left;
+            height:12px;
+            width:801px;
+            background:cadetblue;
+            background:url(../../dist/img/xian2.min.jpg);
+        }
+        .numR{
+            float:left;
+            height:36px;
+            width:124px;
+            background:hotpink;
+            .nuM{
+                float:left;
+                padding-left:9px;
+                height:36px;
+                width:58px;
+                box-sizing: border-box;
+                b{
+                    font-size:12px;
+                    color:#2e251c;
+                }
+            }
+            #direction{
+                float:left;
+                height:36px;
+                width:66px;
+                background:yellow;
+                img{
+                    padding-top:5px;
+                    cursor:pointer;
+                }
+            }
+        }
+    }
+    .picC{
+        height:263px;
+        width:1200px;
+        background:greenyellow;
+        .pic-1{
+            float:left;
+            height:263px;
+            width:240px;
+            background:yellow;
+            overflow:hidden;
+            #cKt{
+                position:relative;
+                height:243px;
+                width:239px;
+                background:pink;
+                margin-top:33px;
+                border-right:1px solid #ebebeb;
+                .zD{
+                    position:absolute;
+                    @include allStyle(56px,56px,red);
+                    right:12px;
+                    border-radius:56px;
+                    font-size:12px;
+                    .p{
+                        font-size:16px;
+                        color:#fff;
+                        margin-left:10px;
+                        line-height:56px;
+                        text-align:center;
+                    }
+                }
+                img{
+                    height:150px;
+                    width:150px;
+                    margin-left:44px;
+                }
+                a{
+                    
+                    p{
+                        margin-top:22px;
+                        font-size:12px;
+                        color:#686465;
+                        text-indent:23px;
+                        line-height:24px;
+                    }  
+                }
+                a:hover p{
+                    color:red;
+                    text-decoration:underline;
+                }
+                span{
+                    font-size:12px;
+                    color:#f84c34;
+                    margin-left:23px;
+                }
+                
+            }
+        }
+    }
 }
