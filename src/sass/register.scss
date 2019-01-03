@@ -1,0 +1,443 @@
+@import 'public';
+#logoAndSeek{
+    @include allStyle(1200px,112px,#ffffff);
+    margin:0 auto;
+    #logoLeft{
+        float:left;
+        width:253px;
+        height:112px;
+        overflow:hidden;
+        #logImg{
+            margin-top:13px;
+            height:67px;
+            width:253px;
+        }
+        #logoLeft-Bom{
+            height:32px;
+            width:253px;
+            position:relative;
+            span{
+                position:absolute;
+                left:2px;
+                top:9px;
+                height:12px;
+                width:221px;
+                background:url(../../dist/img/autoSlogo.min.gif) no-repeat -2px -2px;
+            }
+        }
+    }
+    .logoRight{
+        float:left;
+        width:144px;
+        height:90px;
+        font-size:25px;
+        color:#000;
+        line-height:90px;
+        text-align:center;
+    }
+    #loginRight1{
+        height:100px;
+        width:121px;
+        float:right;
+        font-size:11px;
+        color:#000048;
+        text-align:right;
+        line-height:180px;
+        a{
+            color:#006ee7;
+        }
+        a:hover{
+            cursor:pointer;
+            text-decoration:underline;
+        }
+    }
+}
+.line{
+    @include allStyle(100%,2px,blue);
+}
+#registerZ{
+    width:1200px;
+    height:631px;
+    margin:0 auto;
+    h3{
+        width:1200px;
+        height:80px;
+        font-size:22px;
+        color:#000000;
+        font-weight:normal;
+        line-height:80px;
+        text-align:center;
+    }
+    #register-from{
+        width:840px;
+        height:450px;
+        border-bottom:1px solid #ddd;
+        padding:0 0 100px 360px;
+        #userHhone{
+            width:840px;
+            height:50px;
+            margin-bottom:20px;
+            #bind-input{
+                float:left;
+                height:38px;
+                width:463px;
+                padding:5px 0 5px 15px;
+                border:1px solid #ddd;
+                #user-font{
+                    width:90px;
+                    height:38px;
+                    font-size:14px;
+                    color:#666666;
+                    line-height:38px;
+                    float:left;
+                    text-align:center;
+                }
+                #userphone{
+                    width:323px;
+                    height:38px;
+                    line-height:38px;
+                    border:0;
+                    outline:none;
+                }
+            }
+            #jingG1{
+                display:none;
+                float:left;
+                height:50px;
+                width:111px;
+                margin-left:10px;
+                #jingG-icon{
+                    float:left;
+                    margin-top:19px;
+                    width:14px;
+                    height:14px;
+                    margin-right:5px;
+                    background:url(../../dist/img/iconPng8.min.png) no-repeat 0 0;
+                }
+                #jingG-size{
+                    font-size:12px;
+                    color:#ff0000;
+                    line-height:50px;
+                }
+            }  
+        }
+        #userHhone1{
+            width:840px;
+            height:50px;
+            margin-bottom:20px;
+            #bind-input1{
+                float:left;
+                height:38px;
+                width:463px;
+                padding:5px 0 5px 15px;
+                border:1px solid #ddd;
+                #user-font{
+                    width:90px;
+                    height:38px;
+                    font-size:14px;
+                    color:#666666;
+                    line-height:38px;
+                    float:left;
+                    text-align:center;
+                }
+                #pwdH{
+                    float:left;
+                    width:323px;
+                    height:38px;
+                    line-height:38px;
+                    border:0;
+                    outline:none;
+                }
+                #showpwd{
+                    float:left;
+                    width:26px;
+                    height:16px;
+                    padding:11px;
+                    #isShowPwd{
+                        display:inline-block;
+                        width:26px;
+                        height:16px;
+                        margin-top:5px;
+                        background:url(../../dist/img/iconPng8.min.png) no-repeat -131px -6px;
+                    }
+                    #isShowPwd:hover{
+                        cursor:pointer;
+                    }
+                }
+            }
+            #jingG2{
+                    display:none;
+                    float:left;
+                    height:50px;
+                    width:150px;
+                    margin-left:10px;
+                #jingG-icon{
+                    float:left;
+                    margin-top:19px;
+                    width:14px;
+                    height:14px;
+                    margin-right:5px;
+                    background:url(../../dist/img/iconPng8.min.png) no-repeat 0 0;
+                }
+                #jingG-size{
+                    font-size:12px;
+                    color:#ff0000;
+                    line-height:50px;
+                }
+            }
+        }
+        #huaKuai{
+            width:840px;
+            height:50px;
+            margin-bottom:4px;
+            #hukuai1{
+                width:480px;
+                height:34px;
+                #huakuai2{
+                    width:auto;
+                    height:34px;
+                    background:#e8e8e8;
+                    #huaKuai-icon{
+                        float:left;
+                        display:block;
+                        width:42px;
+                        height:32px;
+                        color:#737383;
+                        border:1px solid #ccc;
+                        line-height:32px;
+                        text-align:center;
+                    }
+                    #huaKuai-icon:hover{
+                        cursor:move;
+                    }
+                    #huaKuai3{
+                        width:auto;
+                        height:34px;
+                        background:#e8e8e8;
+                        #huaDong{
+                            display:block;
+                            height:auto;
+                            width:480px;
+                            line-height:34px;
+                            text-align:center;
+                            font-size:12px;
+                            color:#9c9c9c;
+                        }
+                    }
+                    #huaKuai3:hover{
+                        cursor:pointer;
+                    }
+                }
+            }
+        }
+        #yanZheng{
+            width:840px;
+            height:50px;
+            margin-bottom:20px;
+            #yanZhengCode{
+                width:268px;
+                height:38px;
+                padding:5px 15px;
+                border:1px solid #ddd;
+                margin-right:10px;
+                float:left;
+                #code-font{
+                    float:left;
+                    width:90px;
+                    height:38px;
+                    font-size:12px;
+                    color:#666;
+                    line-height:38px;
+                    letter-spacing:3px;
+                }
+                #duanXin{
+                    float:left;
+                    width:178px;
+                    line-height:38px;
+                    height:38px;
+                    border:0;
+                    outline:none;
+                }
+            }
+            #getCode{
+                float:left;
+                width:140px;
+                height:48px;
+                background:#b5b5b5;
+                border:1px solid #ddd;
+                padding:0 14px;
+                font-size:14px;
+                color:#fff;
+                line-height:48px;
+                text-align:center;
+            }
+            #getCode:hover{
+                cursor:pointer;
+            }
+            #jingG3{
+                display:none;
+                float:left;
+                height:50px;
+                width:120px;
+                margin-left:10px;
+                #jingG-icon{
+                    float:left;
+                    margin-top:19px;
+                    width:14px;
+                    height:14px;
+                    margin-right:5px;
+                    background:url(../../dist/img/iconPng8.min.png) no-repeat 0 0;
+                }
+                #jingG-size{
+                    font-size:12px;
+                    color:#ff0000;
+                    line-height:50px;
+                }
+            }
+        }
+        #read{
+            width:840px;
+            height:20px;
+            margin-bottom:20px;
+            //line-height:20px;
+            #readN{
+                float:left;
+                margin-top:5px;
+                width:12px;
+                height:12px;
+                border:1px solid #ddd;
+                margin:3px 5px 3px 0;
+                outline:none;
+            }
+            .f1{
+                float:left;
+                font-size:12px;
+                a:hover{
+                    text-decoration:underline;
+                }
+            }
+        }
+        #toLogin{
+            display:block;
+            @include allStyle(480px,40px,#d5d5d5);
+            font-size:18px;
+            color:#fff;
+            line-height:40px;
+            text-align:center;
+            margin-bottom:10px;
+        }
+        #toLogin:hover{
+            cursor:pointer;
+        }
+        #register-type{
+            width:428px;
+            height:76px;
+            margin-top:30px;
+            margin-left:27px;
+            #type-top{
+                position:relative;
+                width:428px;
+                height:14px;
+                line-height:14px;
+                margin-bottom:30px;
+                #top-name{
+                    position:absolute;
+                    font-size:14px;
+                    color:#888888;
+                    line-height:14px;
+                    width:204px;
+                    text-align:center;
+                    left:112px;
+                    top:px;
+                    background:#fff;
+                    z-index:2;
+                }
+                #line{
+                    position:absolute;
+                    height:1px;
+                    width:428px;
+                    background:#ddd;
+                    left:0;
+                    top:6.5px;
+                    z-index:1;
+                }
+            }
+            .clearfix{
+                width:428px;
+                height:32px;
+                li{
+                    float:left;
+                    margin-left:20px;
+                    margin-right:20px;
+                    width:26px;
+                    height:26px;
+                    
+                }
+                .clear1{
+                    background:url(../../dist/img/iconPng8.min.png) no-repeat 0 -65px;
+                }
+                .clear2{
+                    background:url(../../dist/img/iconPng8.min.png) no-repeat -28px -65px;
+                }
+                .clear3{
+                    background:url(../../dist/img/iconPng8.min.png) no-repeat -84px -65px;
+                }
+                .clear4{
+                    background:url(../../dist/img/iconPng8.min.png) no-repeat -112px -65px;
+                }
+                .clear5{
+                    background:url(../../dist/img/iconPng8.min.png) no-repeat -140px -65px;
+                }
+            }
+        }
+    }
+}
+.footer{
+    margin-top:30px;
+    width:1200px;
+    height:28px;
+    text-align:center;
+    a{
+        margin-left:4px;
+        margin-right:4px;
+        font-size:11px;
+        color:#869389;
+    }
+    a:hover{
+        color:red;
+        text-decoration:underline;
+    }
+    span{
+        font-size:11px;
+        color:#869389;
+    }
+}
+.deal{
+    width:1200px;
+    height:44px;
+    margin:0 auto;
+    text-align:center;
+    a{
+        font-size:11px;
+        color:#869389;
+    }
+    a:hover{
+        color:red;
+        text-decoration:underline;
+    }
+    span{
+        font-size:11px;
+        color:#832d90;
+    }
+}
+.footerF{
+    width:1200px;
+    height:31px;
+    margin:0 auto;
+    p{
+        line-height:31px;
+        text-align:center;
+        font-size:12px;
+        color:#5e5c5d;
+    }
+}

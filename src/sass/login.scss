@@ -1,0 +1,305 @@
+@import 'public';
+#logoAndSeek{
+    @include allStyle(1200px,112px,#ffffff);
+    margin:0 auto;
+    #logoLeft{
+        float:left;
+        width:253px;
+        height:112px;
+        overflow:hidden;
+        #logImg{
+            margin-top:13px;
+            height:67px;
+            width:253px;
+        }
+        #logoLeft-Bom{
+            height:32px;
+            width:253px;
+            position:relative;
+            span{
+                position:absolute;
+                left:2px;
+                top:9px;
+                height:12px;
+                width:221px;
+                background:url(../../dist/img/autoSlogo.min.gif) no-repeat -2px -2px;
+            }
+        }
+    }
+    .logoRight{
+        float:left;
+        width:144px;
+        height:90px;
+        font-size:25px;
+        color:#000;
+        line-height:90px;
+        text-align:center;
+    }
+}
+.login-main{
+    height:599px;
+    background:#4ec3ff;
+    .login_mainPic{
+        width:1062px;
+        height:599px;
+        margin:0 auto;
+        padding:0 69px;
+        img{
+            float:left;
+        }
+        .login_Right{
+            float:right;
+            width:391px;
+            height:599px;
+            padding:0 40px;
+            .login_K{
+                margin-top:64px;
+                width:341px;
+                height:413px;
+                background:#fff;
+                padding:30px 24px;
+                position:relative;
+                h3{
+                    font-size:18px;
+                    color:#333333;
+                    height:32px;
+                    line-height:1;
+                }
+                #er_weiM{
+                    position:absolute;
+                    width:52px;
+                    height:52px;
+                    right:0px;
+                    top:0px;
+                    img{
+                        cursor:pointer;
+                    }
+                }
+                #login-input{
+                    //margin-bottom:24px;
+                    width:338px;
+                    height:40px;
+                    border:1px solid #dddddd;
+                    #input_icon{
+                        float:left;
+                        width:18px;
+                        height:22px;
+                        display:inline-block;
+                        margin:9px 10px;
+                        background:url(../../dist/img/iconPng8.min.png) no-repeat -20px 0;
+                    }
+                    #username{
+                        width:285px;
+                        border:0;
+                        line-height:24px;
+                        padding:8px 5px;
+                        outline:none;
+                    }
+                }
+                #tiShi{
+                    width:340px;
+                    height:24px;
+                    #tiShi-font{
+                        //display:none;
+                        #tiShi-icon{
+                            float:left;
+                            display:inline-block;
+                            width:14px;
+                            height:14px;
+                            margin:5px;
+                            background:url(../../dist/img/iconPng8.min.png) no-repeat;
+                        }
+                        #tiShi-size{
+                            float:left;
+                            display:inline-block;
+                            color:#ff0000;
+                            line-height:24px;
+                            font-size:12px;
+                        }
+                    }
+                }
+                #login-input1{
+                    width:338px;
+                    height:40px;
+                    border:1px solid #dddddd;
+                    #input_icon{
+                        float:left;
+                        width:18px;
+                        height:22px;
+                        display:inline-block;
+                        margin:9px 10px;
+                        background:url(../../dist/img/iconPng8.min.png) no-repeat -49px 0;
+                    }
+                    #pwd{
+                        width:285px;
+                        border:0;
+                        line-height:24px;
+                        padding:8px 5px;
+                        outline:none;
+                    }
+                }
+                #tiShi1{
+                    width:340px;
+                    height:24px;
+                    #tiShi-font{
+                        //display:none;
+                        #tiShi-icon{
+                            float:left;
+                            display:inline-block;
+                            width:14px;
+                            height:14px;
+                            margin:5px;
+                            background:url(../../dist/img/iconPng8.min.png) no-repeat;
+                        }
+                        #tiShi-size{
+                            float:left;
+                            display:inline-block;
+                            color:#ff0000;
+                            line-height:24px;
+                            font-size:12px;
+                        }
+                    }
+                }
+                p{
+                    display:block;
+                    height:20px;
+                    line-height:16px;
+                    margin-bottom:10px;
+                    input{
+                        margin:3px 5px 3px 0;
+                        float:left;
+                    }
+                    span{
+                        font-size:11px;
+                        color:#666666;
+                    }
+                }
+                #login_Button{
+                    display:block;
+                    width:340px;
+                    height:40px;
+                    background:#409ffb;
+                    line-height:40px;
+                    text-align:center;
+                    font-size:18px;
+                    color:#fff;
+                    margin-bottom:10px;
+                }
+                #login-register{
+                    display:block;
+                    height:20px;
+                    line-height:20px;
+                    margin-bottom:70px;
+                    #register_left{
+                        float:left;
+                        font-size:11px;
+                        color:#0099ff;
+                    }
+                    #register_right{
+                        float:right;
+                        font-size:11px;
+                        color:#0099ff;
+                    }
+                }
+                #login-order{
+                    width:340px;
+                    height:63px;
+                    font-size:12px;
+                    #order-title{
+                        width:320px;
+                        height:6px;
+                        border-bottom:1px solid #ddd;
+                        margin:0 auto;
+                        text-align:center;
+                        position:relative;
+                        #order-size{
+                            width:156px;
+                            height:16px;
+                            color:#888;
+                            background:#fff;
+                            display:inline-block;
+                            position:absolute;
+                            top:-4px;
+                            left:80px;
+                        }
+                    }
+                    .order_cont{
+                        padding:15px 12px;
+                        .clearfix{
+                            li{
+                                height:26px;
+                                width:26px;
+                                margin-right:32px;
+                                float:left;
+                            }
+                            .li1{
+                                background:url(../../dist/img/iconPng8.min.png) no-repeat 0 -33px;
+                            }
+                            .li2{
+                                background:url(../../dist/img/iconPng8.min.png) no-repeat -28px -33px;
+                            }
+                            .li3{
+                                background:url(../../dist/img/iconPng8.min.png) no-repeat -84px -33px;
+                            }
+                            .li4{
+                                background:url(../../dist/img/iconPng8.min.png) no-repeat -112px -33px;
+                            }
+                            .li5{
+                                background:url(../../dist/img/iconPng8.min.png) no-repeat -140px -33px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.footer{
+    margin-top:30px;
+    width:1200px;
+    height:28px;
+    text-align:center;
+    a{
+        margin-left:4px;
+        margin-right:4px;
+        font-size:11px;
+        color:#869389;
+    }
+    a:hover{
+        color:red;
+        text-decoration:underline;
+    }
+    span{
+        font-size:11px;
+        color:#869389;
+    }
+}
+.deal{
+    width:1200px;
+    height:44px;
+    margin:0 auto;
+    text-align:center;
+    a{
+        font-size:11px;
+        color:#869389;
+    }
+    a:hover{
+        color:red;
+        text-decoration:underline;
+    }
+    span{
+        font-size:11px;
+        color:#832d90;
+    }
+}
+.footerF{
+    width:1200px;
+    height:31px;
+    margin:0 auto;
+    p{
+        line-height:31px;
+        text-align:center;
+        font-size:12px;
+        color:#5e5c5d;
+    }
+}
